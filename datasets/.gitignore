@@ -1,0 +1,4 @@
+/housing_df.csv
+/venv/
+*.pyc
+__pycache__/
