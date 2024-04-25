@@ -9,7 +9,7 @@ from sklearn.metrics import mean_absolute_error, r2_score
 import joblib
 from sklearn.model_selection import cross_val_score
 
-df = pd.read_csv('../datasets/housing_df.csv')
+df = pd.read_csv('housing_df.csv')
 y = df['MEDV']
 X = df.drop(['MEDV'], axis=1)
 
@@ -67,3 +67,4 @@ print(f"R-squared: {r2}")
 # Guardar el mejor modelo
 filename = 'ensemble_regression_model.pkl'
 joblib.dump(best_model, filename)
+#%%
