@@ -64,3 +64,6 @@ r2 = r2_score(y_test, y_predictions)
 print(f"Mean Absolute Error: {mae}")
 print(f"R-squared: {r2}")
 
+# Guardar el mejor modelo
+filename = 'ensemble_regression_model.pkl'
+joblib.dump(best_model, filename)
